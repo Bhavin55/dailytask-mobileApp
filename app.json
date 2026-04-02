@@ -4,13 +4,7 @@
     "slug": "dailytask-mobileapp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#6366f1"
-    },
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": false,
@@ -20,10 +14,6 @@
       }
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#6366f1"
-      },
       "package": "com.dailytask.mobileapp",
       "permissions": [
         "android.permission.RECEIVE_BOOT_COMPLETED",
@@ -36,9 +26,7 @@
       [
         "expo-notifications",
         {
-          "icon": "./assets/notification-icon.png",
-          "color": "#6366f1",
-          "sounds": []
+          "color": "#6366f1"
         }
       ],
       "./plugins/withDailyTaskWidget"
