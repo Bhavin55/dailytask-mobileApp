@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "DailyTask",
+    "slug": "dailytask-mobileapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.dailytask.mobileapp",
+      "entitlements": {
+        "com.apple.security.application-groups": ["group.com.dailytask.mobileapp"]
+      }
+    },
+    "android": {
+      "package": "com.dailytask.mobileapp",
+      "permissions": [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.SCHEDULE_EXACT_ALARM"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#6366f1"
+        }
+      ],
+      "./plugins/withDailyTaskWidget"
+    ]
+  }
+}
